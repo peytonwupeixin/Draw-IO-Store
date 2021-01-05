@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-01-05T14:59:24.398Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="ZXqeAGOD0213A8KOPzqp" version="14.1.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-01-05T15:05:46.068Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36" etag="lois57rkp4t8rPkqQc-4" version="14.1.8" type="github">
   <diagram id="QFOdWJNFqNY9_xPCXCDw" name="Page-1">
     <mxGraphModel dx="2186" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -10,7 +10,7 @@
             <mxPoint x="640" y="400" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cvhYeCrI1ffXEheTM2kR-4" value="Our customer camera update for horizontal translation &amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="cvhYeCrI1ffXEheTM2kR-1">
+        <mxCell id="cvhYeCrI1ffXEheTM2kR-4" value="Our customer camera update for arrive mode by horizontal translation &amp;nbsp;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="cvhYeCrI1ffXEheTM2kR-1">
           <mxGeometry x="-0.1081" y="-3" relative="1" as="geometry">
             <mxPoint x="5" y="-3" as="offset" />
           </mxGeometry>
@@ -21,7 +21,7 @@
             <mxPoint x="-1" y="80" as="targetPoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="cvhYeCrI1ffXEheTM2kR-6" value="Mapbox navigation sdk update map camera for turn by turn by vertical translation &amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="cvhYeCrI1ffXEheTM2kR-5">
+        <mxCell id="cvhYeCrI1ffXEheTM2kR-6" value="Mapbox navigation sdk update map camera for navigation by vertical translation &amp;nbsp;" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="cvhYeCrI1ffXEheTM2kR-5">
           <mxGeometry relative="1" as="geometry">
             <mxPoint x="-20" y="-30" as="offset" />
           </mxGeometry>
