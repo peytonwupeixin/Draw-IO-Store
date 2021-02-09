@@ -1,4 +1,4 @@
-<mxfile modified="2021-02-09T06:24:04.926Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="ttK_CvW9zn69vTzplhII" version="14.1.8" type="github">
+<mxfile modified="2021-02-09T06:26:49.179Z" host="app.diagrams.net" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.150 Safari/537.36" etag="KJcUr-jHq-gywAiPoszS" version="14.1.8" type="github">
   <diagram id="WI9T0HZ2pTsCkuznbFz-" name="Page-1">
     <mxGraphModel dx="1385" dy="674" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
       <root>
@@ -132,6 +132,9 @@
             <mxPoint x="600" y="760" as="sourcePoint" />
             <mxPoint x="655" y="780" as="targetPoint" />
           </mxGeometry>
+        </mxCell>
+        <mxCell id="cnCdtzMPtjLO9AhUPwDz-64" value="Render by mapbox GLwhich built-in android or web SDK&lt;br&gt;with these two parts data,and we will see the final map view.&amp;nbsp;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;fontSize=13;" vertex="1" parent="1">
+          <mxGeometry x="470" y="690" width="370" height="40" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
