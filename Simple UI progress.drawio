@@ -1,14 +1,14 @@
-<mxfile host="app.diagrams.net" modified="2021-04-25T08:42:19.695Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="eq5pWO0Ky1zjGdu7jLdd" version="14.5.8" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-25T08:44:13.863Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="IGQkHg_KkOE3vLHDsQId" version="14.5.8" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="1061" dy="590" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-59" parent="0" />
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-124" value="&lt;font color=&quot;#ffffff&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;b&gt;JavaScript&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;strokeColor=#028090;fillColor=#CCE3CA;container=0;align=left;" vertex="1" parent="zV7dkoKjgI9M_0pRiy-D-59">
-          <mxGeometry x="0.38" y="32" width="439.62" height="66.83" as="geometry" />
+          <mxGeometry x="0.38" y="32" width="559.62" height="208" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-126" value="&lt;span style=&quot;color: rgb(26 , 26 , 26)&quot;&gt;React Native UI process&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;fontSize=10;fontColor=#FFFFFF;fillColor=#FFFFFF;container=0;" vertex="1" parent="zV7dkoKjgI9M_0pRiy-D-59">
-          <mxGeometry width="440" height="32" as="geometry" />
+          <mxGeometry width="560" height="32" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-138" value="" style="group" vertex="1" connectable="0" parent="zV7dkoKjgI9M_0pRiy-D-59">
           <mxGeometry x="580" width="350" height="350" as="geometry" />
@@ -59,7 +59,7 @@
           <mxGeometry width="350" height="32" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-155" value="Compomet" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;strokeColor=#028090;fontSize=10;fontColor=#000000;fillColor=#2FA08C;container=0;" vertex="1" parent="zV7dkoKjgI9M_0pRiy-D-59">
-          <mxGeometry x="89.99573968634502" y="47.78688061124394" width="78.66347018279892" height="35.255480710414574" as="geometry" />
+          <mxGeometry x="60" y="47.78" width="70" height="35.26" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-156" value="Bridge/JSI" style="rhombus;whiteSpace=wrap;html=1;rounded=0;sketch=0;strokeColor=#000000;fontSize=10;fontColor=#000000;fillColor=#2FA08C;" vertex="1" parent="zV7dkoKjgI9M_0pRiy-D-59">
           <mxGeometry x="200" y="40.41" width="120" height="50" as="geometry" />
