@@ -1,24 +1,24 @@
-#### Overview & Principle：
+### Overview & Principle：
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20UI%20process.png" width="3540" height="1600">
 
-- Reactive Native(RN)：
+#### Reactive Native(RN)：
 React Native is an open-source cross-platform mobile application UI framework created by Facebook. It was first released in 2015. It mainly contains of 3 parts React(JS),Native(Oc/Java), [JSI(JavaScript Interface)](https://formidable.com/blog/2019/jsi-jsc-part-2/) or Bridge and Js engine(C++). Js code interpreted by Js engine and build its virtual DOM tree,then it control the native view tree(similar real dom tree in browser) throught JSI or bridge. There are still more details in the whole process(eg:diff algorithm optimization and yoga layout conversion), we will not go into details here.We will focus on the JSI/Bridge and Js engine.
 <br/>We can see the principle from the simple process:
 
-1. The process is longer than the original, so the principle determines the UI performance of RN can never exceed the native.
-2. It do not have its own whole UI system. It cann't reduce any of native issues, but will increase the const of solving all kinds of native issues. Because it handles the native UI detail process by itself,we are difficulty to hook it. Some non-UI issues we must fix it on native side and interact with JS side by bridge.
-3. These additional processes must go throught JS-->C++-->ObjectC/Java. The architecture has been optimized by JSI, but it only optimized the process of JS-->C++.The C++-->ObjectC/Java is still an unsolvable performance bottleneck on android side.Since it must via JNI,this will cause serialize and deserialize, and it is asynchronous.But this will not be a problem on iOS side, since Oc/Swift call C++ directly without any additional loss. This is one of the reasons why RN performs better on iOS than on Android.
-4. There are some other performance issues such as high memory usage, low start-up speed, app package size. Facebook found it mainly cause by Js engine. So they officially released a new generation of lightweight JavaScript engine [Hermes](https://hermesengine.dev/) at the ChainReact2019. It can be optionally used at least version 0.60.4 of React Native. *I discuss it with @Jonathan Guo,he indicate that Wonder App use 0.62.2 of React Native,but disable the Hermes.Since it is unstable.* 
+- The process is longer than the original, so the principle determines the UI performance of RN can never exceed the native.
+- It do not have its own whole UI system. It cann't reduce any of native issues, but will increase the const of solving all kinds of native issues. Because it handles the native UI detail process by itself,we are difficulty to hook it. Some non-UI issues we must fix it on native side and interact with JS side by bridge.
+- These additional processes must go throught JS-->C++-->ObjectC/Java. The architecture has been optimized by JSI, but it only optimized the process of JS-->C++.The C++-->ObjectC/Java is still an unsolvable performance bottleneck on android side.Since it must via JNI,this will cause serialize and deserialize, and it is asynchronous.But this will not be a problem on iOS side, since Oc/Swift call C++ directly without any additional loss. This is one of the reasons why RN performs better on iOS than on Android.
+- There are some other performance issues such as high memory usage, low start-up speed, app package size. Facebook found it mainly cause by Js engine. So they officially released a new generation of lightweight JavaScript engine [Hermes](https://hermesengine.dev/) at the ChainReact2019. It can be optionally used at least version 0.60.4 of React Native. *I discuss it with @Jonathan Guo,he indicate that Wonder App use 0.62.2 of React Native,but disable the Hermes.Since it is unstable.* 
 
 
-- Flutter:
+#### Flutter:
 Flutter is an open-source UI software development kit created by Google. It was first released in 2017. It refers to the excellent design ideas of RN,eg:virtual DOM,Data binding and driven,Componentization. 
 We can see the principle from the simple process:
 - It use its independent measure,layout and render engine,so its UI performance is likely to be comparable to or even surpassing native.So it was designed as the UI framwork of [Fuchsia](https://zh.wikipedia.org/wiki/Google_Fuchsia).
 
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20build%20and%20package.png" width="3540" height="1600">
 
-- Kotlin Multiplatform Moblie(KMM):
+#### Kotlin Multiplatform Moblie(KMM):
 KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compilation stage. It is more focus on the common business logic, and this shared common Kotlin code is compiled to different output formats for different targets: to Java bytecode for Android and to native binaries for iOS. It is only different from native app in terms of project structure and build process. App package and runtime phase is the same as native. It use native UI framework , since platform-specific UI have best performance. We can customize specific native features with the expect/actual pattern to seamlessly write platform-specific code.
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_1.png" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_2.png" height="640">
@@ -26,7 +26,7 @@ KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mp
 We can decide how much business code is in the shared module according to our actual situation，it is seamless.
 
 
-#### Basic situation：
+### Basic situation：
 |  Framework |First release time|Latest version|Language and technology stack|Main develop IDE|Who use|
 |----|----|---|---|---|---|
 |[RN](https://github.com/facebook/react-native) |2015|0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
@@ -51,6 +51,7 @@ I noticed that Uber Eats has a total of 3 related applications as below:
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_food_delivery.jpg" height="640">
 
 - Simple Performance comparison
+
 We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from [DIRVER-859](https://wonder.atlassian.net/browse/DRIVER-859) and [DIRVER-861](https://wonder.atlassian.net/browse/DRIVER-861)，and take the average of 10 times.
 
 |Solution|Open page spend|Memory|%CPU|
@@ -61,6 +62,7 @@ We use a same table to stay at the simple middle of our 4 kinds solution demo(we
 |Native demo|92ms|197MB|1.3%|
 
 - Personnel cost
+
 RN is friendly to front-end, they can get started quickly. But for native developer, it takes a lot of time to get familiar with the front-end ecology.The others solutions are more familiar to native developers. KMM is the closest to native, it only takes very little time to learn some differences in the early stage. Based on the time it took to develop the demo, I will assume that the time to develop a same page required by native is 1d.I will estimate the time required for us to learn other solutions and implement a same function.
 
 |Solution|Time|	
