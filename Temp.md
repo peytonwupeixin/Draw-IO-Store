@@ -17,8 +17,7 @@ We can see the principle from the simple process:
 
 
 #### Kotlin Multiplatform Moblie(KMM)
-KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compilation stage. It is more focus on the common business logic, and this shared common Kotlin code is compiled to different output formats for different targets: to Java bytecode for Android and to native binaries for iOS. It is only different from native app in terms of project structure and build process. App package and runtime phase is the same as native. It use native UI framework , since platform-specific UI have best performance. We can customize specific native features with the expect/actual pattern to seamlessly write platform-specific code.
-We can decide how much business code is in the shared module according to our actual situation，it is seamless.
+KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compi.
 
 ### Basic situation
 
