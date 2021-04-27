@@ -71,7 +71,7 @@ RN is friendly to front-end, they can get started quickly. But for native develo
 |KMM demo |1.1d ~ 1.0d|
 |Native demo|1d|
 
-### Additional issues with hybrid solutions:
+### Additional issues with hybrid solutions
 - Mapbox do not have Flutter or RN SDK,so we must use a hybrid solution if use RN or Flutter,and we will meet some hybrid-special issues.
   - Data synchronization issue. The bridge between Native and RN/Flutter is asynchronous and ineffective.So the frequent data interaction(eg.polling data) between two sides may have synchronization issue.
   - Page stack issue. RN/Flutter only use one [activity](https://developer.android.com/reference/android/app/Activity)/[fragment](https://developer.android.com/reference/android/app/Fragment) with one root view(ReactRootView/FlutterView),and switch their page by internal logic in this root view. But on native side,one page is one activity. We must maintain our own hybrid page stack ourselves,when user back and forth between native page and RN/Flutter page.
