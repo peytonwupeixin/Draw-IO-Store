@@ -38,7 +38,7 @@ We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](htt
 
 - Use Status
   - [Airbnb sunsett RN after a series of uses in 2018](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a).
-  - I use [LibChecker](https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=zh&gl=US)to do a simple analysis for some Apk.I analyzed the [Google Play Users’ Choice Awards 2020](https://play.google.com/store/apps/editorial_collection/promotion_topic_bestof2020_uv_hub) and many other similar products (Uber Eats:Food Delivery,Fleet Postmates,DeliveryPanada,GH Drivers,EASI Driver).I found none of them use RN or Flutter.
+  - I use [LibChecker](https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=zh&gl=US) to do a simple analysis for some Apk.I analyzed the [Google Play Users’ Choice Awards 2020](https://play.google.com/store/apps/editorial_collection/promotion_topic_bestof2020_uv_hub) and many other similar products (Uber Eats:Food Delivery,Fleet Postmates,DeliveryPanada,GH Drivers,EASI Driver).I found none of them use RN or Flutter.
 **The final apk of KMM is the same with native apk,so we can’t simply analyze whether they use the KMM**
 
 I noticed that Uber Eats has a total of 3 related applications as below:
@@ -51,7 +51,7 @@ I noticed that Uber Eats has a total of 3 related applications as below:
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_food_delivery.jpg" height="640">
 
 - Simple Performance comparison
-We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from (DIRVER-859)[https://wonder.atlassian.net/browse/DRIVER-859] and (DIRVER-861)[https://wonder.atlassian.net/browse/DRIVER-861])，and take the average of 10 times.
+We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from [DIRVER-859](https://wonder.atlassian.net/browse/DRIVER-859) and [DIRVER-861](https://wonder.atlassian.net/browse/DRIVER-861)，and take the average of 10 times.
 
 |Solution|Open page spend|Memory|%CPU|
 |----|----|---|---|
