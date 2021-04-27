@@ -1,5 +1,4 @@
 ### Overview & Principle
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20UI%20process.png" width="3540" height="1600">
 
 #### Reactive Native(RN)：
 React Native is an open-source cross-platform mobile application UI framework created by Facebook. It was first released in 2015. It mainly contains of 3 parts React(JS),Native(Oc/Java), [JSI(JavaScript Interface)](https://formidable.com/blog/2019/jsi-jsc-part-2/) or Bridge and Js engine(C++). Js code interpreted by Js engine and build its virtual DOM tree,then it control the native view tree(similar real dom tree in browser) throught JSI or bridge. There are still more details in the whole process(eg:diff algorithm optimization and yoga layout conversion), we will not go into details here.We will focus on the JSI/Bridge and Js engine.
@@ -16,21 +15,13 @@ Flutter is an open-source UI software development kit created by Google. It was 
 We can see the principle from the simple process:
 - It use its independent measure,layout and render engine,so its UI performance is likely to be comparable to or even surpassing native.So it was designed as the UI framwork of [Fuchsia](https://zh.wikipedia.org/wiki/Google_Fuchsia).
 
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20build%20and%20package.png" width="3540" height="1600">
 
 #### Kotlin Multiplatform Moblie(KMM):
 KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compilation stage. It is more focus on the common business logic, and this shared common Kotlin code is compiled to different output formats for different targets: to Java bytecode for Android and to native binaries for iOS. It is only different from native app in terms of project structure and build process. App package and runtime phase is the same as native. It use native UI framework , since platform-specific UI have best performance. We can customize specific native features with the expect/actual pattern to seamlessly write platform-specific code.
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_1.png" height="640">
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_2.png" height="640">
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/Kmm_3.png" height="640">
 We can decide how much business code is in the shared module according to our actual situation，it is seamless.
 
 ### Basic situation
-  |  Framework |First release time|Latest version|Language and technology stack|Main develop IDE|Who use|
-  |----|----|---|---|---|---|
-  |[RN](https://github.com/facebook/react-native) |2015|0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
-  |[Flutter](https://github.com/flutter/flutter) |2017|2.0.5|Dart,Flutter|Android Studio and Xcode(iOS)|https://flutter.dev/showcase| 
-  |[Kotlin](https://github.com/jetbrains/kotlin) |2020|0.2.3(stability level of KMM is Alpha)|Kotlin |Android Studio and XCode(iOS)|https://kotlinlang.org/lp/mobile/case-studies|
+12
 
 #### Stability
 We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
@@ -45,9 +36,6 @@ I noticed that Uber Eats has a total of 3 related applications as below:
   - [Uber Eats Orders](https://play.google.com/store/apps/details?id=com.uber.restaurants&hl=en_US&gl=US)
   - [Uber Eats Manager](https://play.google.com/store/apps/details?id=com.uber.restaurantmanager&hl=en_US&gl=US)<br/>
   I found that the Orders app and Manager App both use RN, but the Food Delivery App didn't use RN. This may give us some inspiration.
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_orders.jpg" height="640">
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_manager.jpg" height="640">
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_food_delivery.jpg" height="640">
 
 #### Simple Performance comparison
 We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from [DIRVER-859](https://wonder.atlassian.net/browse/DRIVER-859) and [DIRVER-861](https://wonder.atlassian.net/browse/DRIVER-861)，and take the average of 10 times.
