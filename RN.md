@@ -27,6 +27,7 @@ We can decide how much business code is in the shared module according to our ac
 
 
 ### Basic situation
+
 |  Framework |First release time|Latest version|Language and technology stack|Main develop IDE|Who use|
 |----|----|---|---|---|---|
 |[RN](https://github.com/facebook/react-native) |2015|0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
