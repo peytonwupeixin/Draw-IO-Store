@@ -10,7 +10,7 @@ React Native is an open-source cross-platform mobile application UI framework cr
 - There are some other performance issues such as high memory usage, low start-up speed, app package size. Facebook found it mainly cause by Js engine. So they officially released a new generation of lightweight JavaScript engine [Hermes](https://hermesengine.dev/) at the ChainReact2019. It can be optionally used at least version 0.60.4 of React Native. *I discuss it with @Jonathan Guo,he indicate that Wonder App use 0.62.2 of React Native,but disable the Hermes.Since it is unstable.* 
 
 
-#### Flutter:
+#### Flutter
 Flutter is an open-source UI software development kit created by Google. It was first released in 2017. It refers to the excellent design ideas of RN,eg:virtual DOM,Data binding and driven,Componentization. 
 We can see the principle from the simple process:
 - It use its independent measure,layout and render engine,so its UI performance is likely to be comparable to or even surpassing native.So it was designed as the UI framwork of [Fuchsia](https://zh.wikipedia.org/wiki/Google_Fuchsia).
@@ -21,7 +21,7 @@ KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mp
 We can decide how much business code is in the shared module according to our actual situation，it is seamless.
 
 ### Basic situation
-12ads
+
 #### Stability
 We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
 
