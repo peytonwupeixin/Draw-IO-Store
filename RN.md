@@ -20,7 +20,7 @@ We can see the principle from the simple process:
 
 - Kotlin Multiplatform Moblie(KMM):
 KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compilation stage. It is more focus on the common business logic, and this shared common Kotlin code is compiled to different output formats for different targets: to Java bytecode for Android and to native binaries for iOS. It is only different from native app in terms of project structure and build process. App package and runtime phase is the same as native. It use native UI framework , since platform-specific UI have best performance. We can customize specific native features with the expect/actual pattern to seamlessly write platform-specific code.
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_1.png" height="640">&emsp;
+<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_1.png" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_2.png" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/Kmm_3.png" height="640">
 We can decide how much business code is in the shared module according to our actual situation，it is seamless.
@@ -46,12 +46,13 @@ I noticed that Uber Eats has a total of 3 related applications as below:
   - [Uber Eats Orders](https://play.google.com/store/apps/details?id=com.uber.restaurants&hl=en_US&gl=US)
   - [Uber Eats Manager](https://play.google.com/store/apps/details?id=com.uber.restaurantmanager&hl=en_US&gl=US)
   I found that the Orders app and Manager App both use RN, but the Food Delivery App didn't use RN. This may give us some inspiration.
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_orders.jpg" height="640">&emsp;
+<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_orders.jpg" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_manager.jpg" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_food_delivery.jpg" height="640">
 
 - Simple Performance comparison
 We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from (DIRVER-859)[https://wonder.atlassian.net/browse/DRIVER-859] and (DIRVER-861)[https://wonder.atlassian.net/browse/DRIVER-861])，and take the average of 10 times.
+
 |Solution|Open page spend|Memory|%CPU|
 |----|----|---|---|
 |Flutter+Native demo|117ms|246MB|1.3%|
