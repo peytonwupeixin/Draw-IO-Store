@@ -33,10 +33,10 @@ We can decide how much business code is in the shared module according to our ac
 |[Flutter](https://github.com/flutter/flutter) |2017|2.0.5|Dart,Flutter|Android Studio and Xcode(iOS)|https://flutter.dev/showcase| 
 |[Kotlin](https://github.com/jetbrains/kotlin) |2020|0.2.3(stability level of KMM is Alpha)|Kotlin |Android Studio and XCode(iOS)|https://kotlinlang.org/lp/mobile/case-studies|
 
-#### Stability
+#### Stability:
 We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
 
-#### Use Status
+#### Use Status:
   - [Airbnb sunsett RN after a series of uses in 2018](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
   - I use [LibChecker](https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=zh&gl=US) to do a simple analysis for some Apk.I analyzed the [Google Play Users’ Choice Awards 2020](https://play.google.com/store/apps/editorial_collection/promotion_topic_bestof2020_uv_hub) and many other similar products (Uber Eats:Food Delivery,Fleet Postmates,DeliveryPanada,GH Drivers,EASI Driver).I found none of them use RN or Flutter.
 **The final apk of KMM is the same with native apk,so we can’t simply analyze whether they use the KMM**
@@ -50,7 +50,7 @@ I noticed that Uber Eats has a total of 3 related applications as below:
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_manager.jpg" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_food_delivery.jpg" height="640">
 
-#### Simple Performance comparison
+#### Simple Performance comparison:
 
 We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from [DIRVER-859](https://wonder.atlassian.net/browse/DRIVER-859) and [DIRVER-861](https://wonder.atlassian.net/browse/DRIVER-861)，and take the average of 10 times.
 
@@ -61,7 +61,7 @@ We use a same table to stay at the simple middle of our 4 kinds solution demo(we
 |KMM demo |90ms|217MB|1.1%|
 |Native demo|92ms|197MB|1.3%|
 
-#### Personnel cost
+#### Personnel cost:
 
 RN is friendly to front-end, they can get started quickly. But for native developer, it takes a lot of time to get familiar with the front-end ecology.The others solutions are more familiar to native developers. KMM is the closest to native, it only takes very little time to learn some differences in the early stage. Based on the time it took to develop the demo, I will assume that the time to develop a same page required by native is 1d.I will estimate the time required for us to learn other solutions and implement a same function.
 
@@ -72,7 +72,7 @@ RN is friendly to front-end, they can get started quickly. But for native develo
 |KMM demo |1.1d ~ 1.0d|
 |Native demo|1d|
 
-### Additional issues with hybrid solutions
+### Additional issues with hybrid solutions:
 - Mapbox do not have Flutter or RN SDK,so we must use a hybrid solution if use RN or Flutter,and we will meet some hybrid-special issues.
   - Data synchronization issue. The bridge between Native and RN/Flutter is asynchronous and ineffective.So the frequent data interaction(eg.polling data) between two sides may have synchronization issue.
   - Page stack issue. RN/Flutter only use one [activity](https://developer.android.com/reference/android/app/Activity)/[fragment](https://developer.android.com/reference/android/app/Fragment) with one root view(ReactRootView/FlutterView),and switch their page by internal logic in this root view. But on native side,one page is one activity. We must maintain our own hybrid page stack ourselves,when user back and forth between native page and RN/Flutter page.
@@ -80,7 +80,7 @@ RN is friendly to front-end, they can get started quickly. But for native develo
 
 *KMM have not above issue*
 
-### Future
+### Future:
 [Jetpackage Compose](https://developer.android.com/jetpack/compose) is a new UI framwork announced by Google. It release beta version recently, and I also have experienced it in my [personal demo](). It is develoed by Koltin and its own layout and measure mechanism, and use canvas on native framwork layer to draw the UI. It didn't support cross-platform currently ,so we didn't consider it this time.But his architecture design supports expansion into cross-platform in future,may be we can use it as the UI layer and KMM as the logic layer to develop our app, when it support cross-platform.
 
 
