@@ -28,11 +28,11 @@ We can decide how much business code is in the shared module according to our ac
 
 ### Basic situation
 
-|  Framework |First release time|Latest version|Language and technology stack|Main develop IDE|Who use|
-|----|----|---|---|---|---|
-|[RN](https://github.com/facebook/react-native) |2015|0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
-|[Flutter](https://github.com/flutter/flutter) |2017|2.0.5|Dart,Flutter|Android Studio and Xcode(iOS)|https://flutter.dev/showcase| 
-|[Kotlin](https://github.com/jetbrains/kotlin) |2020|0.2.3(stability level of KMM is Alpha)|Kotlin |Android Studio and XCode(iOS)|https://kotlinlang.org/lp/mobile/case-studies|
+  |  Framework |First release time|Latest version|Language and technology stack|Main develop IDE|Who use|
+  |----|----|---|---|---|---|
+  |[RN](https://github.com/facebook/react-native) |2015|0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
+  |[Flutter](https://github.com/flutter/flutter) |2017|2.0.5|Dart,Flutter|Android Studio and Xcode(iOS)|https://flutter.dev/showcase| 
+  |[Kotlin](https://github.com/jetbrains/kotlin) |2020|0.2.3(stability level of KMM is Alpha)|Kotlin |Android Studio and XCode(iOS)|https://kotlinlang.org/lp/mobile/case-studies|
 
 #### Stability
 We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
@@ -54,22 +54,22 @@ I noticed that Uber Eats has a total of 3 related applications as below:
 #### Simple Performance comparison
 We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from [DIRVER-859](https://wonder.atlassian.net/browse/DRIVER-859) and [DIRVER-861](https://wonder.atlassian.net/browse/DRIVER-861)，and take the average of 10 times.
 
-|Solution|Open page spend|Memory|%CPU|
-|----|----|---|---|
-|Flutter+Native demo|117ms|246MB|1.3%|
-|Rn+Native demo|365ms|226MB|6%|
-|KMM demo |90ms|217MB|1.1%|
-|Native demo|92ms|197MB|1.3%|
+  |Solution|Open page spend|Memory|%CPU|
+  |----|----|---|---|
+  |Flutter+Native demo|117ms|246MB|1.3%|
+  |Rn+Native demo|365ms|226MB|6%|
+  |KMM demo |90ms|217MB|1.1%|
+  |Native demo|92ms|197MB|1.3%|
 
 #### Personnel cost
 RN is friendly to front-end, they can get started quickly. But for native developer, it takes a lot of time to get familiar with the front-end ecology.The others solutions are more familiar to native developers. KMM is the closest to native, it only takes very little time to learn some differences in the early stage. Based on the time it took to develop the demo, I will assume that the time to develop a same page required by native is 1d.I will estimate the time required for us to learn other solutions and implement a same function.
 
-|Solution|Time|	
-|----|----|
-|Flutter+Native demo|2d~1.5d|
-|Rn+Native demo|3d~2d|
-|KMM demo |1.1d ~ 1.0d|
-|Native demo|1d|
+  |Solution|Time|	
+  |----|----|
+  |Flutter+Native demo|2d~1.5d|
+  |Rn+Native demo|3d~2d|
+  |KMM demo |1.1d ~ 1.0d|
+  |Native demo|1d|
 
 ### Additional issues with hybrid solutions
 - Mapbox do not have Flutter or RN SDK,so we must use a hybrid solution if use RN or Flutter,and we will meet some hybrid-special issues.
