@@ -37,14 +37,14 @@ We can decide how much business code is in the shared module according to our ac
 We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
 
 - Use Status<br/>
-  - [Airbnb sunsett RN after a series of uses in 2018](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a).
+  - [Airbnb sunsett RN after a series of uses in 2018](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
   - I use [LibChecker](https://play.google.com/store/apps/details?id=com.absinthe.libchecker&hl=zh&gl=US) to do a simple analysis for some Apk.I analyzed the [Google Play Users’ Choice Awards 2020](https://play.google.com/store/apps/editorial_collection/promotion_topic_bestof2020_uv_hub) and many other similar products (Uber Eats:Food Delivery,Fleet Postmates,DeliveryPanada,GH Drivers,EASI Driver).I found none of them use RN or Flutter.
 **The final apk of KMM is the same with native apk,so we can’t simply analyze whether they use the KMM**
 
 I noticed that Uber Eats has a total of 3 related applications as below:
   - [Uber Eats:Food Delivery](https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=en_US&gl=US)
   - [Uber Eats Orders](https://play.google.com/store/apps/details?id=com.uber.restaurants&hl=en_US&gl=US)
-  - [Uber Eats Manager](https://play.google.com/store/apps/details?id=com.uber.restaurantmanager&hl=en_US&gl=US)
+  - [Uber Eats Manager](https://play.google.com/store/apps/details?id=com.uber.restaurantmanager&hl=en_US&gl=US)<br/>
   I found that the Orders app and Manager App both use RN, but the Food Delivery App didn't use RN. This may give us some inspiration.
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_orders.jpg" height="640">
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/uber_eats_manager.jpg" height="640">
