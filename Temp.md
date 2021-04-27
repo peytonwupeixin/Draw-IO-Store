@@ -19,21 +19,13 @@ We can see the principle from the simple process:
 #### Kotlin Multiplatform Moblie(KMM)
 KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compi.
 
-### Basic situation
+### Basicsituation
 
 #### Stability
 We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
 
 #### Use Status
 k'
-
-#### Simple Performance comparison
-2g.
-
-#### Personnel cost
-41
-
-### Additional issues with hybrid solutions
 3
 
 ### Future:
