@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2021-04-28T07:07:24.577Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="wgdFEPOqRwapE74rMZAE" version="14.6.6" type="github">
+<mxfile host="app.diagrams.net" modified="2021-04-28T07:07:51.754Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/90.0.4430.85 Safari/537.36" etag="FXEULmCM-IXeEP95NhkO" version="14.6.6" type="github">
   <diagram name="Page-1" id="74e2e168-ea6b-b213-b513-2b3c1d86103e">
     <mxGraphModel dx="3300" dy="1972" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="#FFFFFF" math="0" shadow="0">
       <root>
@@ -62,7 +62,7 @@
           <mxGeometry x="80" y="865.12" width="740" height="574.88" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-126" value="&lt;span style=&quot;color: rgb(26, 26, 26); font-size: 40px;&quot;&gt;React Native UI process&lt;/span&gt;" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;fontSize=40;fontColor=#FFFFFF;fillColor=#FFFFFF;container=0;" parent="zV7dkoKjgI9M_0pRiy-D-59" vertex="1">
-          <mxGeometry x="-140" y="-10" width="960" height="70" as="geometry" />
+          <mxGeometry x="-110" y="-10" width="930" height="70" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-124" value="&lt;font color=&quot;#ffffff&quot; style=&quot;font-size: 20px&quot;&gt;&lt;b&gt;&amp;nbsp; &amp;nbsp; &amp;nbsp;&amp;nbsp;&lt;br&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp; JavaScript&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&amp;nbsp;&lt;/b&gt;&lt;/div&gt;&lt;/b&gt;&lt;/font&gt;" style="whiteSpace=wrap;html=1;rounded=0;sketch=0;strokeColor=#028090;fillColor=#CCE3CA;container=0;align=left;" parent="zV7dkoKjgI9M_0pRiy-D-59" vertex="1">
           <mxGeometry x="80" y="343.42" width="740" height="556.58" as="geometry" />
@@ -96,7 +96,7 @@
             <mxPoint x="288.78901123187427" y="696.437257980115" as="sourcePoint" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="zV7dkoKjgI9M_0pRiy-D-156" value="Bridge / &lt;br&gt;JavaScript Interface(JSI)" style="rhombus;whiteSpace=wrap;html=1;rounded=0;sketch=0;strokeColor=#000000;fontSize=10;fontColor=#000000;fillColor=#FF3333;container=0;" parent="zV7dkoKjgI9M_0pRiy-D-59" vertex="1">
+        <mxCell id="zV7dkoKjgI9M_0pRiy-D-156" value="Bridge / &lt;br style=&quot;font-size: 20px;&quot;&gt;JavaScript Interface(JSI)" style="rhombus;whiteSpace=wrap;html=1;rounded=0;sketch=0;strokeColor=#000000;fontSize=20;fontColor=#000000;fillColor=#FF3333;container=0;" parent="zV7dkoKjgI9M_0pRiy-D-59" vertex="1">
           <mxGeometry x="545.7972616723133" y="937.6681789638934" width="198.1922862176446" height="208.67817896389326" as="geometry" />
         </mxCell>
         <mxCell id="zV7dkoKjgI9M_0pRiy-D-189" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=1;entryDx=0;entryDy=0;strokeColor=#000000;fillColor=#F45B69;fontSize=10;fontColor=#000000;startArrow=classic;startFill=1;endArrow=classic;endFill=1;" parent="zV7dkoKjgI9M_0pRiy-D-59" source="zV7dkoKjgI9M_0pRiy-D-187" target="zV7dkoKjgI9M_0pRiy-D-156" edge="1">
