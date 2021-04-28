@@ -1,5 +1,5 @@
 ### Overview & Principle
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20UI%20process.png">
+<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20UI%20progress.png">
 
 #### Reactive Native(RN)：
 React Native is an open-source cross-platform mobile application UI framework created by Facebook. It was first released in 2015. It mainly contains of 3 parts React(JS),Native(Oc/Java), [JSI(JavaScript Interface)](https://formidable.com/blog/2019/jsi-jsc-part-2/) or Bridge and Js engine(C++). Js code interpreted by Js engine and build its virtual DOM tree,then it control the native view tree(similar real dom tree in browser) throught JSI or bridge to show the page. There are still more details in the whole process(eg:diff algorithm optimization and yoga layout conversion), we will not go into details here.We will focus on the JSI/Bridge and Js engine.
