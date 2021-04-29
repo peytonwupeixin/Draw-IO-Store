@@ -1,7 +1,7 @@
 ### Overview & Principle
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20UI%20progress.png">
 
-#### Reactive Native(RN)：
+#### Reactive Native(RN)
 React Native is an open-source cross-platform mobile application UI framework created by Facebook. It was first released in 2015. It mainly contains of 3 parts React(JS),Native(Oc/Java), [JSI(JavaScript Interface)](https://formidable.com/blog/2019/jsi-jsc-part-2/) or Bridge and Js engine(C++). Js code interpreted by Js engine and build its virtual DOM tree,then it control the native view tree(similar real dom tree in browser) throught JSI or bridge to show the page. There are still more details in the whole process(eg:diff algorithm optimization and yoga layout conversion), we will not go into details here.We will focus on the JSI/Bridge and Js engine.
 <br/>We can see the principle from the simple process:
 
@@ -10,31 +10,38 @@ React Native is an open-source cross-platform mobile application UI framework cr
 - **Other performance issues.** There are some other performance issues such as high memory usage, low start-up speed, app package size. Facebook found it mainly cause by Js engine. So they officially released a new generation of lightweight JavaScript engine [Hermes](https://hermesengine.dev/) at the ChainReact2019. It can be optionally used at least version 0.60.4 of React Native. *I discuss it with @Jonathan Guo,he indicate that Wonder App use 0.62.2 of React Native,but disable the Hermes.Since it is unstable.* 
 
 
-#### Flutter:
+#### Flutter
 Flutter is an open-source UI software development kit created by Google. It was first released in 2017. It refers to the excellent design ideas of RN,eg:virtual DOM,Data binding and driven,Componentization. 
 We can see the principle from the simple process:
 - **Not native UI issues.** It use its independent measure,layout and render engine,so it would not have any native UI issues.Its UI performance is likely to be comparable to or even surpassing native.So it was designed as the UI framwork of [Fuchsia](https://zh.wikipedia.org/wiki/Google_Fuchsia).
 - **Compatibility issues on iOS.** Currenty, the ui performance is not good as native on iOS.
 
+#### Native
+Native is to use SDK of mobile system for development. It have the best perform, but requires iOS and Android development to implement separate logic and UI on corresponding end. 
+
 <img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/Simple%20build%20and%20package.png" width="3540" height="1600">
 
-#### Kotlin Multiplatform Moblie(KMM):
+#### Kotlin Multiplatform Moblie(KMM)
 KMM is built on top of the [Kotlin Multiplatform](https://kotlinlang.org/docs/mpp-intro.html) technology. KMM is different from RN and Flutter,it is not a UI framwork,it is more like the magic of the compilation stage. It is more focus on the common business logic, and this shared common Kotlin code is compiled to different output formats for different targets: to Java bytecode for Android and to native binaries for iOS. It is only different from native app in terms of project structure and build process. App package and runtime phase is the same as native. It use native UI framework , since platform-specific UI have best performance. We can customize specific native features with the expect/actual pattern to seamlessly write platform-specific code.
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_1.png" height="640">
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_2.png" height="640">
-<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/Kmm_3.png" height="640">
+<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_1.png">
+<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/KMM_2.png">
+<img src="https://raw.githubusercontent.com/peytonwupeixin/Draw-IO-Store/main/confluence/Kmm_3.png">
 We can decide how much business code is in the shared module according to our actual situation，it is seamless.
+
+
 
 ### Basic situation
 
-  |  Framework |First release time|Latest version|Language and technology stack|Main develop IDE|Who use|
-  |----|----|---|---|---|---|
-  |[RN](https://github.com/facebook/react-native) |2015|0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
-  |[Flutter](https://github.com/flutter/flutter) |2017|2.0.5|Dart,Flutter|Android Studio and Xcode(iOS)|https://flutter.dev/showcase| 
-  |[Kotlin](https://github.com/jetbrains/kotlin) |2020|0.2.3(stability level of KMM is Alpha)|Kotlin |Android Studio and XCode(iOS)|https://kotlinlang.org/lp/mobile/case-studies|
+  |  Framework |Latest stable version|Language and technology stack|Main develop IDE|Who use|
+  |----|---|---|---|---|
+  |[RN](https://github.com/facebook/react-native) |0.64.0|JSX,Js/Ts,Redux/Vue,npm,React Native|VS Code，WebStorm or other front-end supported IDE and Xcode(iOS)|https://reactnative.dev/showcase|
+  |[Flutter](https://github.com/flutter/flutter) |2.0.5|Dart,Flutter|Android Studio and Xcode(iOS)|https://flutter.dev/showcase| 
+  |Native |Same as the latest system version|Kotlin or Java / Swift or Oc|Android Studio / Xcode(iOS)|Most apps| 
+  |[KMM](https://github.com/jetbrains/kotlin) |0.2.3(stability level of KMM is Alpha)|Kotlin |Android Studio and XCode(iOS)|https://kotlinlang.org/lp/mobile/case-studies|
 
 #### Stability
-We can see the stability order Flutter > RN > KMM. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix.
+We can see the stability order Native>Flutter > RN > KMM. 
+Flutter perform not so well as native on iOS. However,KMM is in [Alpha](https://kotlinlang.org/docs/components-stability.html),Kotlin team is fully committed to working to improve and evolve this technology and will not suddenly drop it.The update speed of RN is really slow. From 2015 to now, it is still 0.64 version. Hermes released in 2019 is still unstable. When we meet its architectural problems, we will be difficult to quickly fix. 
 
 #### Use Status
   - [Airbnb sunsett RN after a series of uses in 2018](https://medium.com/airbnb-engineering/sunsetting-react-native-1868ba28e30a)
@@ -53,7 +60,7 @@ I noticed that Uber Eats has a total of 3 related applications as below:
 #### Simple Performance comparison
 We use a same table to stay at the simple middle of our 4 kinds solution demo(we can download from [DIRVER-859](https://wonder.atlassian.net/browse/DRIVER-859) and [DIRVER-861](https://wonder.atlassian.net/browse/DRIVER-861)，and take the average of 10 times.
 
-  |Solution|Open page spend|Memory|%CPU|
+  |Solution|Open page spend|Memory|CPU cost|
   |----|----|---|---|
   |Flutter+Native demo|117ms|246MB|1.3%|
   |Rn+Native demo|365ms|226MB|6%|
@@ -61,14 +68,14 @@ We use a same table to stay at the simple middle of our 4 kinds solution demo(we
   |Native demo|92ms|197MB|1.3%|
 
 #### Personnel cost
-RN is friendly to front-end, they can get started quickly. But for native developer, it takes a lot of time to get familiar with the front-end ecology.The others solutions are more familiar to native developers. KMM is the closest to native, it only takes very little time to learn some differences in the early stage. Based on the time it took to develop the demo, I will assume that the time to develop a same page required by native is 1d.I will estimate the time required for us to learn other solutions and implement a same function.
+RN is friendly to front-end, they can get started quickly. But for native developer, it takes a lot of time to get familiar with the front-end ecology. The others solutions are more familiar to native developers. KMM is the closest to native, it only takes very little time to learn some differences in the early stage. Based on the time I took to develop the demo, I will assume that the time for us to develop a same page required is 1d by native each side. I will estimate the time required for us to learn other solutions and implement the same function.
 
   |Solution|Time|	
   |----|----|
-  |Flutter+Native demo|2d~1.5d|
-  |Rn+Native demo|3d~2d|
-  |KMM demo |1.1d ~ 1.0d|
-  |Native demo|1d|
+  |Flutter+Native |2.1m/d ~ 1.6m/d |
+  |Rn+Native |3.5m/d ~ 2.5 m/d|
+  |KMM  |1.1m/d ~ 1.0m/d for android/kmm  + 0.5m/d for iOS = 1.6~1.5 m/d|
+  |Native |1m/d for android + 1 m/d for iOS = 2m/d|
 
 ### Additional issues with hybrid solutions
 - Mapbox do not have Flutter or RN SDK,so we must use a hybrid solution if use RN or Flutter,and we will meet some hybrid-special issues.
