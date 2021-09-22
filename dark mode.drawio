@@ -1,1 +1,65 @@
-<mxfile host="app.diagrams.net" modified="2021-09-22T06:09:25.300Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36" etag="M5vww_vjKOGNxHge5U9B" version="15.2.9" type="github"><diagram name="Page-1" id="c7488fd3-1785-93aa-aadb-54a6760d102a">7Vvbkto4EP0aHkP5jnkMk5nZh9nUVE1qd/MobGErkS1KFgHy9SuB5AviIggzqGbMC1Zblu0+p0+3GzPw74rVIwXz/G+SQjzwnHQ18L8MPM8NnJh/Cct6axkF0pBRlMpJjeEF/YbS6EjrAqWw6kxkhGCG5l1jQsoSJqxjA5SSZXfajODuWecgg5rhJQFYt/6LUpZLq+s4zY6/IMpyeeo4lDumIPmZUbIo5flKUsLtngKoZeTUKgcpWbZM/v3Av6OEsO1WsbqDWLhVeWx73MOBvfUlU1gykwO8aQBj1xtPHS8N4tHsk1zhF8AL6YZn7nN5sWytfFMtUYEBvy1/krMCc6PLN5Mc4fQJrMlCnLxi3A9qNMkJRb9JyYCazHdTJlHnV9me8SKO5GZh3fgRpnJU+0sMMJhCPKmdfUcwoXzXxt1ifUp+1siJM8744g+gQFgQ8h9IU1ACaZbXEfMhwCgr+XbCXQj5ehPdp8pJkDK4apmkjx8hKSCjaz5F7Y0l3ioU5HDZ8CpSU/IWpQI1EUguZ/XSDah8Q+JqiLGnYfwkoPQc1xDnI9BJaHSfHWTaaSdKp3mGTnPD13CaG2vOgSnXCzkklOUkIyXA9411h7wtD56iLvfvZyFhO7YHhJWH2xiEfAzLVB2RYFBVKPmWo3K7Qx7mbketg35AxtZyDBaMcFNzI0+EzGvAL4ml0xyQTKzIgibwwJxQSj+gGTy0TrSdIwA5yiQKMWDoV1fgr0qTUIstnTYY8xQmMF3miMGXOdjc+5Jn0S5JbJS+g2JirIVRVwojPar9PUHtv0ZMR6fBajBwTwP2XiByvS5GYTQMxq3PSINstA+y0WvkLkeDqJfht5DhkYEMx9bI8KiP7L2RXeuofZEd25c5PbvA8317Uuc+dC7XYe4kuv5P2jeD72IwDHuNPkejxwYarborFoj0uBfpvXEeWFx++X35dZPQVmF7PLZda2JbXe+x4ObxOhebxSoTHeThdF6UQ2ls00REDko4FIIuz6RCDBERhFPCGCkO82jg+bPNp7XGZxnATKA6mUOK+L2KSP5Cc1JMF9VzY5p0GrkZYHAJ1oIcC4aRoGPNynUxJeJqOcwAY4gflx3aa+JktfyEoT1lhqv3o/uqcKef4toDl6+hJTvLe4Lfos6ya9qPf53Wshf1SfXqSVUVKkeTqmeSVH17kqoSh3deMSsZubhhGYyH7YJ5HN2uYnZ1TdS1UPNtF6NOlTTDZJnkPEKHKUxQtSmF9uJ8pP44DrVFwHo7tUjodx+F3PB2yS44lOz0ZySbkp1/299Rvf531PNF1IAHgUm+C0zyXWhPvtND7F3mO3Wbl7fxR0On/fFvl+88vav3HVbXjPm+WXwdMTB5scI1fbNCEvMTh8Fxog455chYLuTizwTx+2umkNms4te5y836Gi6UGIMXNj5MeXa2Dum/SAn4m08U3K48U4t+4EKj1Qjd4vEHeU0M9613LTWKTNRoZE9pYvDuUN/ftrJ4CgJ7Rcv9IC+unA1aqFW8NyxxAw2Tj5ZZrl+yqnfPjyUJoxzhWZMjPL22/Ep66tyEOqoNe5Q7puVF87Az9lW2kLpUP1DY+bjj6fnlyk/nPSevy0nVAzuDlPE4GHVIaTcnff1vR1fpDg3Ddn+o5+Z53DR539uidwl9/afRPtfeijtGnUXTOq2VbEPVXP4jXeNOB+vWhLlQuWqP7KkmVxB2zqqeHx8OzHfDo/P5xvYK3lZk+xc3bxQMJg8t4zfSUT5s/lu+pVXz333//n8=</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-09-22T10:00:35.971Z" agent="5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.54 Safari/537.36" etag="dEw4VR6sbQkTag0bmqM6" version="15.2.9" type="github">
+  <diagram name="Page-1" id="c7488fd3-1785-93aa-aadb-54a6760d102a">
+    <mxGraphModel dx="1395" dy="734" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1100" pageHeight="850" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="2b4e8129b02d487f-5" target="2b4e8129b02d487f-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2b4e8129b02d487f-5" value="Start app&amp;nbsp;" style="ellipse;whiteSpace=wrap;html=1;rounded=0;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;" parent="1" vertex="1">
+          <mxGeometry x="475" y="20" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="2b4e8129b02d487f-6" target="GOpi0iKPsD8S0dPwmGbc-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="2b4e8129b02d487f-6" value="We will show style(dark or light) according to the current time (after sunrise or sunset) instead of original according to device setting." style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;dashed=1;" parent="1" vertex="1">
+          <mxGeometry x="360" y="160" width="320" height="110" as="geometry" />
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-22" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="GOpi0iKPsD8S0dPwmGbc-8" target="GOpi0iKPsD8S0dPwmGbc-14">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="220" y="410" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-26" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GOpi0iKPsD8S0dPwmGbc-22">
+          <mxGeometry x="-0.5502" relative="1" as="geometry">
+            <mxPoint x="-82" y="70" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-23" style="edgeStyle=orthogonalEdgeStyle;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;endArrow=classic;endFill=1;strokeWidth=1;" edge="1" parent="1" source="GOpi0iKPsD8S0dPwmGbc-8" target="GOpi0iKPsD8S0dPwmGbc-15">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="760" y="410" />
+              <mxPoint x="760" y="640" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-27" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GOpi0iKPsD8S0dPwmGbc-23">
+          <mxGeometry x="-0.6734" y="5" relative="1" as="geometry">
+            <mxPoint x="104" y="75" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-8" value="Whether COR transform mode manually&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="450" y="340" width="140" height="140" as="geometry" />
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-21" style="orthogonalLoop=1;jettySize=auto;html=1;strokeWidth=1;endArrow=none;endFill=0;dashed=1;" edge="1" parent="1">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="540" as="targetPoint" />
+            <mxPoint x="1000" y="540" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-25" value="&lt;span style=&quot;font-size: 12px ; background-color: rgb(248 , 249 , 250)&quot;&gt;Restart App&lt;/span&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="GOpi0iKPsD8S0dPwmGbc-21">
+          <mxGeometry x="0.1416" relative="1" as="geometry">
+            <mxPoint x="45" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-14" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="170" y="640" width="215" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="GOpi0iKPsD8S0dPwmGbc-15" value="" style="rounded=1;whiteSpace=wrap;html=1;shadow=0;labelBackgroundColor=none;strokeWidth=1;fontFamily=Verdana;fontSize=8;align=center;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="650" y="640" width="220" height="110" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
